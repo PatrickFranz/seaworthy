@@ -1,0 +1,23 @@
+{
+  "name": "maintainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "author": "Patrick Franz",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^8.0.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "node-sass": "^4.11.0"
+  }
+}

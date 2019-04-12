@@ -1,0 +1,25 @@
+body{
+  overflow-x: hidden;
+}
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.title{
+  margin: 20px 0;
+}
+
+.paper{
+  padding: 20px 50px;
+  margin: 20px;
+}
+
+.download-card{
+  display: flex;
+  flex-direction: row;
+
+}
