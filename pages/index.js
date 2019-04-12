@@ -70,8 +70,14 @@ const Home = (props) => {
                   Feel free to fork and use this repo if you find it helpful. <br/><br/>
               </Typography>
               <Typography variant='subheading'>Install</Typography>
+              <List>
+                <ListItem>1. Create a directory</ListItem>
+                <ListItem>2. Open that directory in your terminal</ListItem>
+                <ListItem>3. Clone the Repo using the instructions below</ListItem>
+              </List>
               <Typography variant='body'>
-                <code>npm install</code>
+                <code>> git clone git@github.com:PatrickFranz/NextJS-Starter.git</code> <br/>
+                <code>> npm install</code>
               </Typography>
             </div>
           </Paper>
