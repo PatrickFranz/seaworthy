@@ -36,8 +36,8 @@ const Home = (props) => {
               <Typography variant="body1">
                 This page, all components, and contents of the <code>/scss</code> directory are only included to serve as examples. Feel free to remove and/or modify as needed. The <code>_app.js</code> and <code>_document.js</code> files in the <code>pages</code> directory (may) contain elements that make the technology work. Edit at your own discretion.
               </Typography>
-              </div>
-            </Paper>
+            </div>
+          </Paper>
             <Paper>
               <div className="paper">
                 <Typography variant="headline" gutterBottom>
@@ -67,7 +67,11 @@ const Home = (props) => {
                 Usage
               </Typography>
               <Typography variant="body1">
-                  Feel free to fork and use this repo if you find it helpful.
+                  Feel free to fork and use this repo if you find it helpful. <br/><br/>
+              </Typography>
+              <Typography variant='subheading'>Install</Typography>
+              <Typography variant='body'>
+                <code>npm install</code>
               </Typography>
             </div>
           </Paper>
@@ -77,21 +81,27 @@ const Home = (props) => {
                 Fork It
               </Typography>
               <Typography variant="body1">
-                  Grab it from my Github page.
+                  Grab it from my Github page. <br/><br/>
               </Typography> 
-              <div className="download-card">
-                      <Avatar alt="Patrick Franz" 
-                              src={props.data.avatar_url} className="bio_avatar"/>
-                      <Link href="https://github.com"
-                            variant="body1"
-                            rel="noopener" 
-                            target="_blank"  
-                            color='inherit'
-                            align="center"
-                            justify='center'>
-                        NextJS Starter @ Github
-                      </Link>
-              </div>
+              <Grid container
+                    alignItems="center">
+                <Grid item>
+                  <Avatar alt="Patrick Franz" 
+                          src={props.data.avatar_url} 
+                          className="bio_avatar"/>
+                </Grid>
+                <Grid item>
+                  <Link href="https://github.com"
+                        variant="body1"
+                        rel="noopener" 
+                        target="_blank"  
+                        color='inherit'
+                        align="center"
+                        justify='center'>
+                    NextJS Starter @ Github
+                  </Link>
+                </Grid>
+              </Grid>
             </div>
           </Paper>
         </Grid>
