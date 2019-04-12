@@ -121,19 +121,17 @@ const Home = (props) => {
                       NextJS Starter @ Github
                   </Grid>
                 </Grid>
-            </Link>
+              </Link>
             </div>
           </Paper>
         </Grid>
       </Grid>
     </div>
-    )
-  }
+    )}
 
 Home.getInitialProps = async function(){
-  const result = await fetch("https://api.github.com/users/patrickfranz"  );
+  const result = await fetch("https://api.github.com/users/patrickfranz");
   const data = await result.json();
-
   return {
     data
   }
