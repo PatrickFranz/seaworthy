@@ -45,18 +45,19 @@ const Home = (props) => {
                 </Typography>
                   <List>
                     {currentTech.map(tech => (
-                      <ListItem button component='a' key={tech.name}>
+                    <Link href={tech.url}
+                          key={tech.name}
+                          variant="button" 
+                          rel="noopener" 
+                          target="_blank" 
+                          color="inherit">
+                      <ListItem button>
                         <ListItemIcon>
                           <LinkIcon/>
                         </ListItemIcon>  
-                        <Link href={tech.url}
-                              variant="button" 
-                              rel="noopener" 
-                              target="_blank" 
-                              color="inherit">
                           <ListItemText primary={tech.name} />
-                        </Link>
                       </ListItem>
+                        </Link>
                     )) }
                   </List>
               </div>
@@ -71,14 +72,26 @@ const Home = (props) => {
               </Typography>
               <Typography variant='subheading'>Install</Typography>
               <List>
-                <ListItem>1. Create a directory</ListItem>
-                <ListItem>2. Open that directory in your terminal</ListItem>
-                <ListItem>3. Clone the Repo using the instructions below</ListItem>
+                <ListItem>
+                  1. Create a directory
+                </ListItem>
+                <ListItem>
+                  2. Open that directory in your terminal
+                </ListItem>
+                <ListItem>
+                  3. Clone the Repo using the instructions below</ListItem>
+                <ListItem>
+                  <Typography variant='body1'>
+                    <code>> git clone git@github.com:PatrickFranz/NextJS-Starter.git</code> <br/>
+                  </Typography>
+                </ListItem>
+                <ListItem>
+                  4. Run the project
+                </ListItem>
+                <ListItem>
+                  <code>> npm run dev</code>
+                </ListItem>
               </List>
-              <Typography variant='body'>
-                <code>> git clone git@github.com:PatrickFranz/NextJS-Starter.git</code> <br/>
-                <code>> npm install</code>
-              </Typography>
             </div>
           </Paper>
           <Paper>
@@ -89,25 +102,26 @@ const Home = (props) => {
               <Typography variant="body1">
                   Grab it from my Github page. <br/><br/>
               </Typography> 
-              <Grid container
-                    alignItems="center">
-                <Grid item>
-                  <Avatar alt="Patrick Franz" 
-                          src={props.data.avatar_url} 
-                          className="bio_avatar"/>
+              <Link href="https://github.com/PatrickFranz/NextJS-Starter"
+                      variant="body1"
+                      rel="noopener" 
+                      target="_blank"  
+                      color='inherit'
+                      align="center"
+                      justify='center'>
+                <Grid container
+                      direction="row"
+                      alignItems="center">
+                  <Grid item>
+                    <Avatar alt="Patrick Franz" 
+                            src={props.data.avatar_url} 
+                            className="bio_avatar"/>
+                  </Grid>
+                  <Grid item>
+                      NextJS Starter @ Github
+                  </Grid>
                 </Grid>
-                <Grid item>
-                  <Link href="https://github.com"
-                        variant="body1"
-                        rel="noopener" 
-                        target="_blank"  
-                        color='inherit'
-                        align="center"
-                        justify='center'>
-                    NextJS Starter @ Github
-                  </Link>
-                </Grid>
-              </Grid>
+            </Link>
             </div>
           </Paper>
         </Grid>
