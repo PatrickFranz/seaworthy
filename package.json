@@ -1,7 +1,7 @@
 {
-  "name": "next-starter",
+  "name": "seaworth",
   "version": "1.0.0",
-  "description": "",
+  "description": "A test to see if I can build a usable boat maintanence app.",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -12,6 +12,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.3",
     "@material-ui/icons": "^3.0.2",
+    "firebase": "^6.0.2",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.4",
     "react": "^16.8.6",
@@ -20,5 +21,13 @@
   "devDependencies": {
     "@zeit/next-sass": "^1.0.1",
     "node-sass": "^4.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickFranz/NextJS-Starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PatrickFranz/NextJS-Starter/issues"
+  },
+  "homepage": "https://github.com/PatrickFranz/NextJS-Starter#readme"
 }
