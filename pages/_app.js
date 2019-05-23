@@ -23,7 +23,12 @@ export default class BlogApp extends App {
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
         <link 
           rel="stylesheet" 
-          href="https://fonts.googleapis.com/icon?family=Material+Icons" />  
+          href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+        <script src="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.js"></script>
+        <link 
+          type="text/css" 
+          rel="stylesheet" 
+          href="https://cdn.firebase.com/libs/firebaseui/4.0.0/firebaseui.css" />
       </Head>
     );
   }
